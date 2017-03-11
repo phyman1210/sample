@@ -4,7 +4,7 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 
 # GitHub skip authorization
-mkdir ~/.netrc
+vim ~/.netrc
 *paste below
 machine github.com
 login username
@@ -19,7 +19,7 @@ vim ~/.bashrc
 *paste below
 source ~/Documents/Github/git-prompt.sh
 source ~/Documents/Github/git-completion.bash
-PS1="\h@\u:\W\$(__git_ps1) \$ "
+PS1="\[\033[34m\]\h@\u:\[\033[0m\]\W\$(__git_ps1) \$ "
 *
 
 # terminal alias setup
