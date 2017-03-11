@@ -10,6 +10,8 @@ machine github.com
 login username
 password xxxxxxxmiku
 *
+eval `ssh-agent`
+ssh-add
 
 # GitHub terminal setup
 git config --global push.default current
