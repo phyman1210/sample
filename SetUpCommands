@@ -1,0 +1,37 @@
+# GitHub connect account
+mkdir ~/.ssh
+ssh-keygen -t rsa
+pbcopy < ~/.ssh/id_rsa.pub
+
+# GitHub skip authorization
+mkdir ~/.netrc
+*paste below
+machine github.com
+login username
+password xxxxxxxmiku
+*
+
+# GitHub terminal setup
+git config --global push.default current
+*Download git-completion.bash
+*Download git-prompt.sh
+vim ~/.bashrc
+*paste below
+source ~/Documents/Github/git-prompt.sh
+source ~/Documents/Github/git-completion.bash
+PS1="\h@\u:\W\$(__git_ps1) \$ "
+*
+
+# terminal alias setup
+alias pull='git pull'
+alias branch='git branch'
+alias st='git status'
+alias stt='git status -uno'
+alias commit='git commit -m /'update/''
+alias push='git push'
+
+# terminal color setup
+git config --global color.ui auto
+
+# Github start collaboration
+git clone <uri>
