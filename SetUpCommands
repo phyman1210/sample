@@ -37,3 +37,14 @@ git config --global color.ui auto
 
 # Github start collaboration
 git clone <uri>
+
+
+# pip install (python package management)
+sudo python get-pip.py
+pip install -U pip
+
+# superpack install (python package management include homebrew, especially for science)
+curl -o install_superpack.sh https://raw.githubusercontent.com/fonnesbeck/ScipySuperpack/master/install_superpack.sh
+sudo sh install_superpack.sh
+
+# Selenium & firefox Setup
