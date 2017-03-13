@@ -44,7 +44,7 @@ alias pull='git pull'
 alias branch='git branch'
 alias st='git status'
 alias stt='git status -uno'
-alias commit='git commit -m /'update/''
+alias commit="git commit -m 'update'"
 alias push='git push'
 
 # terminal color setup
